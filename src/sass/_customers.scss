@@ -2,7 +2,7 @@
    
     background-image: url(../images/customers/fon-mobile-fon.png);
     background-repeat: no-repeat;
-    background-position:top 0 left;
+    background-position:bottom 0 left;
     background-size:cover;
     max-width: max-content;
     height: max-content;
@@ -10,6 +10,7 @@
     margin-right: auto;
 
     @media screen and(min-width:480px) {
+        background-position: bottom 0 left;
         max-width: max-content;
         max-height: max-content;
         
@@ -78,8 +79,11 @@
 }
 
 .customers__list{
-    margin-top: 32px    ;
+    
     padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-top: 32px;
 
     @media screen and(min-width:768px) {
         display: flex;
@@ -87,10 +91,10 @@
         
     }
 
-        @media screen and(min-width:1280px) {
-            margin-bottom: 0px;
-            display: flex;
-            flex-wrap: wrap;
+    @media screen and(min-width:1280px) {
+        margin-bottom: 0px;
+        display: flex;
+        flex-wrap: wrap;
     
         }
 }
